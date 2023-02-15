@@ -41,3 +41,21 @@ def test_mean():
         print("Error in mean(): incorrect mean")
         return False
     return True
+
+
+def test_count():
+    '''
+    Purpose:
+        Test the count() method of the Statistics class.
+    Pre-conditions:
+        (none)
+    Post-conditions:
+        (none)
+    Return:
+        :return: True if the test passes, False otherwise.
+    '''
+    s = Statistics.Statistics()
+    if s.count() != 0:
+        print("Error in count(): incorrect count")
+        return False
+    return True
