@@ -1,5 +1,6 @@
-# importing Statistics
+# importing statistics
 import statistics as s
+
 
 # our class Statistics
 class Statistics(object):
@@ -11,7 +12,8 @@ class Statistics(object):
         self.__count = 0
         self.__avg = 0
         self.__mylist = []
-   def add(self, value):
+
+    def add(self, value):
         """
         Purpose:
             Use the given value in the calculation of mean and
@@ -56,3 +58,49 @@ class Statistics(object):
         """
 
         return self.__count
+
+    # our method range to get difference between max and min elements until the elements are added
+    def range(self):
+        # try block
+        try:
+            # return range
+            return max(self.__mylist) - min(self.__mylist)
+        # except block
+        except:
+            # return None
+            return None
+
+            # our method mode to get most occured elements until the elements are added
+
+    def mode(self):
+        # try block
+        try:
+            return s.mode(self.__mylist)
+        # except block
+        except:
+            # return None
+            return None
+
+            # our method min to get minimum element until the elements are added
+
+    def min(self):
+        # try block
+        try:
+            # returning min
+            return min(self.__mylist)
+        # except block
+        except:
+            # return None
+            return None
+
+            # our method max to get maximum element until the elements are added
+
+    def max(self):
+        # try block
+        try:
+            # returning max
+            return max(self.__mylist)
+        # except block
+        except:
+            # return None
+            return None
