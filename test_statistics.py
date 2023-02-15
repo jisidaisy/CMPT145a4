@@ -79,3 +79,10 @@ def test_all():
     if not test_count():
         return False
     return True
+
+
+if __name__ == "__main__":
+    if test_all():
+        print("*** Test script passed ***")
+    else:
+        print("*** Test script failed ***")
