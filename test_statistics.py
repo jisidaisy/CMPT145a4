@@ -59,3 +59,23 @@ def test_count():
         print("Error in count(): incorrect count")
         return False
     return True
+
+
+def test_all():
+    '''
+    Purpose:
+        Run all the tests.
+    Pre-conditions:
+        (none)
+    Post-conditions:
+        (none)
+    Return:
+        :return: True if all the tests pass, False otherwise.
+    '''
+    if not test_add():
+        return False
+    if not test_mean():
+        return False
+    if not test_count():
+        return False
+    return True
